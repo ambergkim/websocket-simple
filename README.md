@@ -18,12 +18,12 @@ The idea was to be as minimal as possible with implementation. I would have like
 
 There are two main parts in this application:
 - [The server](./server.js):
-  - Runs the WebSocketServer on ``ws://localhost:3000``
+  - Runs the WebSocketServer on ``ws://127.0.0.1:3000``
   - Pretends to have a database by just using an object. All data will get deleted when you restart the application.
 - [The SDK](./sdk.js)
   - A pretend SDK that a client can bring in and use in their application. The one instance is meant only for one user at this time.
   - When instantiated, it:
-    - iniitates a connection with the WebSocket server at ``ws://localhost:3000``.
+    - iniitates a connection with the WebSocket server at ``ws://127.0.0.1:3000``.
     - Registers a new user named ``Abby``.
     - Begins listening for messages
     - Returns an object with methods for the client to interact with the webserver. **Calling these methods currently does not work outside of the instantiation scope.**
