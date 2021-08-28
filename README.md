@@ -101,6 +101,8 @@ If you send more messages using postman to a user named 'Abby', then you can sen
   - Handle people trying to send messages as someone else
   - Handle people trying to register an existing username.
 - CI/CD Pipeline with develop and master branch protections and automated test runs.
+- Pre-commit hooks to check for linting and other errors.
+- Github templates for Pull requests
 
 ## Requirements
 - [x] A short text message can be sent from one user (the sender) to another
